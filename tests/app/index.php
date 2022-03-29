@@ -50,6 +50,7 @@ class MyActivityPubApp extends Kernel
     protected function configureContainer(ContainerConfigurator $container): void
     {
         $container->extension('framework', [
+            'secret' => 'mySecret',
             'assets' => [
                 'base_path' => '/public',
             ],
